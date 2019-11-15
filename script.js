@@ -7,12 +7,12 @@
         };
     }
     let gen = sequence(3,4);
-    function take (num){
+    function take (gener, num){
         const array =[];
         for(let i = 0; i < num ; i++){
-            array.push(gen());
+            array.push(gener());
         }
         return array;
     }
-    console.log(take(5));
+    console.log(take(gen, 5));
 })();
